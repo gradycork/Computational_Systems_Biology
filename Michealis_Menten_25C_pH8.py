@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 #%% Simulate MM kinetics of mutant enzyme at 25c ph 8
 # Constants
 K_cat = 136.21
-K_M = 1.01
+K_M = 19.28
 # Variables
 E_0 = 10e-3
 # ODE

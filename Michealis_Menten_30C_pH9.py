@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 #%% Simulate MM kinetics recombinant mutant 30c ph9
 # Constants
 K_cat = 4.2
-K_M = 1.01
+K_M = 19
 # Variables
 E_0 = 10e-3
 # ODE
@@ -38,7 +38,7 @@ def MM_dynamics(t,y,K_cat,K_M,E_0):
 # Initial Conditions
 y0 = [0,100]
 # time span
-t = np.linspace(0,1500,100)
+t = np.linspace(0,1600,100)
 tspan = [t[0],t[-1]]
 
 ode_sol = solve_ivp(lambda t,y:MM_dynamics(t,y,K_cat,K_M,E_0),tspan,y0,t_eval=t)
